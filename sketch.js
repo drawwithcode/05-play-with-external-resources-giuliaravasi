@@ -19,20 +19,38 @@ analyzer.setInput(mySong);
 
 button = createButton('play');
 button.mousePressed(toggleSong);
-button.position(width/2 - 20, height - 30);
+button.position(width/2 - 40, height - 80);
+button.style('padding', '20px');
+button.style('font-family', 'Rubik');
+button.style('font-size', '16px');
+button.style('background-color', '#65d26e');
+button.style('color', '#f0fbf1');
+button.style('border', 'solid #f0fbf1', '10px');
 }
 
 function toggleSong() {
   if(!mySong.isPlaying()) {
     mySong.play();
     button.html('pause');
-    button.position(width/2 - 20, height - 30);
-    buttonAlign(CENTER);
+    button.position(width/2 - 40, height - 80);
+
+    button.style('padding', '20px');
+    button.style('font-family', 'Rubik');
+    button.style('font-size', '16px');
+    button.style('background-color', '#65d26e');
+    button.style('color', '#f0fbf1');
+    button.style('border', 'solid #f0fbf1', '10px');
   } else {
     mySong.pause();
     button.html('play');
-    button.position(width/2 - 20, height - 30);
-    buttonAlign(CENTER);
+    button.position(width/2 - 40, height - 80);
+
+    button.style('padding', '20px');
+    button.style('font-family', 'Rubik');
+    button.style('font-size', '16px');
+    button.style('background-color', '#65d26e');
+    button.style('color', '#f0fbf1');
+    button.style('border', 'solid #f0fbf1', '10px');
   }
 }
 
