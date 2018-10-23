@@ -6,18 +6,6 @@ var volumehistory = [];
 
 var button;
 
-// function buttonPlay() {
-//   noStroke();
-//   fill('#ff0055');
-//   triangle(width/2 - 10, height - 75, width/2 - 10, height - 45, width/2 + 20, height - 60);
-// }
-// function buttonPause() {
-//   noStroke();
-//   fill('#ff0055');
-//   rect(width/2 - 11, height - 75, 6, 30);
-//   rect(width/2 + 6, height - 75, 6, 30);
-// }
-
 function preload(){
   mySong = loadSound('./assets/New Happy Day - fennecbeats.mp3');
   myImage = loadImage('./assets/Funny_Song_o.jpg');
@@ -60,13 +48,6 @@ function draw() {
   volumehistory.push(volume);
 
   image(myImage, 0, 0, windowWidth, windowHeight);
-
-  // beginShape();
-  // stroke('#ff0055');
-  // strokeWeight(2);
-  // fill(10);
-  // ellipse(width/2, height - 60, 60);
-  // endShape();
 
   stroke(0);
   strokeWeight(2);
